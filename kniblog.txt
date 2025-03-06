@@ -1,0 +1,40 @@
+- login email
+- changed email logo
+- opened github (for email and updated logo)
+- created repo for official site
+- started with project 
+- created a new branch
+
+**NAVBAR**
+
+- made the navbar html
+- made the variables css  
+
+**leftovercode**
+
+                <li>
+                    <a href="#" class="desktop-item">Events&News</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Drop menu 1</a></li>
+                        <li><a href="#">Drop menu 2</a></li>
+                        <li><a href="#">Drop menu 3</a></li>
+                        <li><a href="#">Drop menu 4</a></li>
+                    </ul>
+                </li>
+
+
+.nav-links .drop-menu {
+  position: absolute;
+  background: var(--primary-background-color);
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links li:hover .drop-menu,
+**********************************************************************
