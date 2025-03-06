@@ -493,6 +493,9 @@ nav input {
 .social-icon:hover #facebook {
   color: #0000ff;
 }
+.social-icon:hover #LinkedIn {
+  color: #0077b5;
+}
 
 .quick-links {
   list-style: none;
