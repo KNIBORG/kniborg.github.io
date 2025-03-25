@@ -67,7 +67,20 @@
 }
 
 body{
+  background-color: var(--white_level_0);
   color: var(--dark_level_2);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+}
+
+
+
+.dark_mode ion-icon {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.dark_mode ion-icon[name="sunny"] {
+  transform: rotate(360deg); 
 }
 
 /* Navbar Styles */
@@ -183,7 +196,6 @@ position: relative;
   padding: 10px 20px;
   font-family: var(--font_three);
   color: var(--white_level_0);
-
   font-size: var(--font_size_5);
   font-weight: var(--font_weight_6);
 
@@ -258,8 +270,8 @@ position: relative;
 /* Button Styles (close and open menu) */
 
 .wrapper .btn {
-  color: #3a3b3c;
-  font-size: 30px;
+  color: var(--white_level_0);
+  font-size: var(--font_size_9);
   cursor: pointer;
   display: none;
 }
@@ -267,7 +279,11 @@ position: relative;
   position: absolute;
   right: 30px;
   top: 10px;
-  color: #f2f2f2;
+  color: var(--white_level_0);
+}
+
+.wrapper .btn.close-btn .menu_close_icon{
+  font-size: var(--font_size_8);
 }
 /* CTA Styles */
 
@@ -328,23 +344,29 @@ align-items: end;
 }
 
 .left-panel p {
-  font-size: 1rem;
+  font-size: var(--font_size_4);
   margin-bottom: 20px;
+  font-weight: var(--font_weight_2);
   color: #333;
 }
 
 .donate_button_lg {
   text-decoration: none;
-  padding: 10px 20px;
+  text-align: center;
+  padding: 20px 20px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 1.2rem;
+  word-spacing: 6px;
+  letter-spacing: 6px;
+  font-weight: var(--font_weight_6);
   color: white;
   background-color: var(--blue_level_0);
   
 
 }
+
 
 .donate_button_lg:hover {
 
@@ -973,6 +995,12 @@ align-items: end;
 /* Media Queries */
 
 @media screen and (max-width: 970px) {
+
+  .wrapper .logo{
+    flex: 1;
+   
+  }
+
   .wrapper .btn {
     display: block;
   }
@@ -983,17 +1011,17 @@ align-items: end;
     position: fixed;
     height: 100vh;
     width: 100%;
-    max-width: 350px;
     top: 0;
     left: -100%;
     color: var(--text-color);
-    background: #e6e6e6;
+    background: var(--blue_level_0);
     display: block;
     padding: 50px 10px;
     line-height: 50px;
     overflow-y: auto;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
+    z-index: 1000;
   }
   /* custom scroll bar */
   ::-webkit-scrollbar {
@@ -1005,8 +1033,15 @@ align-items: end;
   ::-webkit-scrollbar-thumb {
     background: #3a3b3c;
   }
+
   #menu-btn:checked ~ .nav-links {
     left: 0%;
+  }
+  .menu-btn{
+    margin-left: 10px;
+  }
+  .menu_icon{
+    font-size: var(--font_size_8);
   }
   #menu-btn:checked ~ .btn.menu-btn {
     display: none;
@@ -1021,6 +1056,7 @@ align-items: end;
     padding: 0 20px;
     display: block;
     font-size: 20px;
+    
   }
   .nav-links .drop-menu {
     position: static;
@@ -1095,6 +1131,52 @@ align-items: end;
   .content .row header {
     font-size: 19px;
   }
+
+  .nav-links li:last-child {
+    margin-left: 30px;
+}
+
+  /* Hero Section */
+  .hero-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  .hero-container .left-panel {
+  order: 1;  
+  }
+
+  .hero-container .right-panel {
+  order: 2;
+  }
+
+
+.wrapper .bookmark{ 
+  position: absolute;
+  top: 67%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 75px;
+  padding: 0px; 
+  -webkit-transform: rotate(0deg) skew(0deg); 
+  transform: rotate(0deg) skew(0deg); 
+  border-left: 39px solid var(--yellow_level_0); 
+  border-right: 39px solid var(--yellow_level_0); 
+  border-bottom: 50px solid transparent; 
+}
+
+#cta {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 7.5px;
+  font-family: var(--font_three);
+  color: var(--white_level_0);
+  font-size: var(--font_size_3);
+  font-weight: var(--font_weight_6);
+
+}
+
 }
 
 @media (max-width: 480px) {

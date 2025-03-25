@@ -1,4 +1,4 @@
-const images = ["students.png", "2.png", "3.png", "4.png"];
+const images = ["2.png", "3.png", "4.png"];
 let currentIndex = 0;
 
 function changeImage() {
@@ -44,22 +44,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const darkModeIcon = darkModeToggle.querySelector("ion-icon"); // Get the icon
     const body = document.body;
 
     // Check if dark mode was previously enabled
     if (localStorage.getItem("darkMode") === "enabled") {
         body.classList.add("dark-mode");
+        darkModeIcon.setAttribute("name", "sunny"); // Change icon to sun
+    } else {
+        darkModeIcon.setAttribute("name", "moon-sharp"); // Default icon
     }
 
-    // Toggle dark mode when button is clicked
+    // Toggle dark mode and change icon
     darkModeToggle.addEventListener("click", function () {
         body.classList.toggle("dark-mode");
 
-        // Save preference to localStorage
         if (body.classList.contains("dark-mode")) {
             localStorage.setItem("darkMode", "enabled");
+            darkModeIcon.setAttribute("name", "sunny"); // Change to sun icon
         } else {
             localStorage.setItem("darkMode", "disabled");
+            darkModeIcon.setAttribute("name", "moon-sharp"); // Change to moon icon
         }
     });
 });
