@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Global Styles */
+
+
+
+/* Global Variables */
+
+:root {
+  /* blue */
+  --blue_level_0:#183B4E;
+  --blue_level_1: #27548A;
+
+  /* yellow */
+  --yellow_level_0: #DDA853;
+  --yellow_level_1: #f5d131;
+
+  /* black */
+  --dark_level_0: #202225;
+  --dark_level_1: #292b2f;
+  --dark_level_2: #40444b;
+  --dark_level_3: #40444b;
+  --dark_level_4: #40444b;
+
+
+  /* white */
+  --white_level_0: #f5f5f5;
+  --white_level_1: #ffffff;
+
+  /* FONTS */
+--font_one: 'Montserrat', sans-serif;
+--font_two: 'Open Sans', sans-serif;
+--font_three: 'Poppins', sans-serif;
+--font_four: 'Roboto', sans-serif;
+
+/* FONT SIZES */
+--font_size_0: 10px;
+--font_size_1: 12px;
+--font_size_2: 14px;
+--font_size_3: 16px;
+--font_size_4: 18px;
+--font_size_5: 20px;
+--font_size_6: 22px;
+--font_size_7: 24px;
+--font_size_8: 26px;
+--font_size_9: 28px;
+--font_size_10: 30px;
+
+/* FONT WEIGHTS */
+--font_weight_0: 100;
+--font_weight_1: 200;
+--font_weight_2: 300;
+--font_weight_3: 400;
+--font_weight_4: 500;
+--font_weight_5: 600;
+--font_weight_6: 700;
+
+}
+
+
+body.dark-mode {
+    background-color: var(--dark_level_0);
+    color: #ffffff;
+}
+
+body.dark-mode nav {
+    background-color: var(--dark_level_1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* body.dark-mode .nav-links li a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links li a:hover {
+    color: #facc15; 
+} */

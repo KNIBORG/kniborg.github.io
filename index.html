@@ -13,6 +13,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_dark_mode.css">
 </head>
 
 <body>
@@ -24,9 +25,7 @@
                     <img src="resources/logo.png" alt="">
 
                 </a>
-                <div class="bookmark">
               
-                </div>
             </div>
       
               
@@ -88,8 +87,15 @@
                 </li>
 
 
-                <li><a id="cta" href="cta.html">JOIN US</a></li>
+                <li class="dark_mode" id="dark-mode-toggle"><ion-icon name="moon-sharp"></ion-icon></li>
             </ul>
+            <div class="cta_div">
+                
+                <a id="cta" href="cta.html">JOIN US</a>
+                <div class="bookmark">
+              
+                </div>
+            </div>
             <label for="menu-btn" class="btn menu-btn"><ion-icon name="menu"></ion-icon></label>
         </div>
     </nav>
@@ -98,28 +104,33 @@
 
     <div class="hero-section">
         <div class="hero-container">
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <!-- Top Section -->
+        <div class="top-section">
+            <div class="image-placeholder">
+                <img id="slider-image" src="students.png" alt="Personalized Learning">
+            </div>
+        </div>
+    </div>
             <!-- Left Panel -->
             <div class="left-panel">
-                <h1>Transform Lives Through Literacy and Learning</h1>
-                <p>Empowering underserved communities in Tanzania with accessible libraries and diverse educational
-                    resources. Together, we create a culture of reading and lifelong learning.</p>
-                    <a class="donate_button_lg" href="cta.html">JOIN OUR MISSION
-                        <span class="arrow_up_right_donate_button_lg">
-                            &#8599;
-                        </span>
-                    </a>
+                <div class="left_panel_container">
+                    <h1>Transform Lives Through Literacy and Learning</h1>
+                    <p>Empowering underserved communities in Tanzania with accessible libraries and diverse educational
+                        resources. Together, we create a culture of reading and lifelong learning.</p>
+                        <a class="donate_button_lg" href="cta.html">JOIN OUR MISSION
+                            <span class="arrow_up_right_donate_button_lg">
+                                &#8599;
+                            </span>
+                        </a>
+                </div>
+             
 
                 </div>
 
-            <!-- Right Panel -->
-            <div class="right-panel">
-                <!-- Top Section -->
-                <div class="top-section">
-                    <div class="image-placeholder">
-                        <img id="slider-image" src="students.png" alt="Personalized Learning">
-                    </div>
-                </div>
-            </div>
+       
+           
         </div>
     </div>
 
