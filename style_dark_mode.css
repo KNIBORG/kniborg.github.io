@@ -70,6 +70,12 @@ body.dark-mode nav {
 }
 
 
+body.dark-mode .mega-box .content {
+  background: var(--dark_level_1);
+  border-top:1px solid var(--dark_level_4);
+}
+
+
 
 @media screen and (max-width: 970px) {
 
@@ -120,3 +126,21 @@ body.dark-mode .left-panel h1 {
 body.dark-mode .nav-links li a:hover {
     color: #facc15; 
 } */
+
+
+body.dark-mode #timeline {
+  padding: 100px 0;
+  background-color: var(--dark_level_0);
+  border-top: 1px solid var(--dark_level_4);
+  border-bottom: 1px solid var(--dark_level_4);
+}
+body.dark-mode #timeline h1 {
+
+  color: var(--white_level_1);
+}
+body.dark-mode #timeline p.leader {
+ 
+  color: var(--white_level_1);
+}
+
+

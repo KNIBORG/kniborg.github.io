@@ -9,9 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="resources/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/fav/favicon-16x16.png">
     <link rel="manifest" href="resources/fav/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style_dark_mode.css">
 </head>
@@ -21,7 +18,7 @@
     <nav>
         <div class="wrapper">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="resources/logo.png" alt="">
 
                 </a>
@@ -42,8 +39,8 @@
                     <label for="showMega" class="mobile-item">Services</label>
                     <div class="mega-box">
                         <div class="content">
-                            <div class="row">
-                                <img src="/resources/logo.png" alt="Official Logo">
+                            <div class="row row_img">
+                                <img class="logo_img" src="resources/logo.png" alt="Official Logo">
                             </div>
                             <div class="row">
                                 <header>Library Services</header>
@@ -87,7 +84,13 @@
                 </li>
 
 
-                <li class="dark_mode" id="dark-mode-toggle"><ion-icon name="moon-sharp"></ion-icon></li>
+                <li class="dark_mode" id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="currentColor" class="moon_icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                      </svg>
+                      
+                      
+                </li>
             </ul>
             <div class="cta_div">
                 
@@ -96,7 +99,12 @@
               
                 </div>
             </div>
-            <label for="menu-btn" class="btn menu-btn"><ion-icon class="menu_icon" name="menu"></ion-icon></label>
+            <label for="menu-btn" class="btn menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons menu_icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                  
+            </label>
         </div>
     </nav>
 
@@ -133,47 +141,85 @@
 
 
     <!-- Events -->
-<h1 class="events_title">Events</h1>
-    <div class="events">
-        <div class="events-content">
-            <div class="grid">
-                <a class="grid-item">
-                    <p class="event_date">June 06 2023</p>
-                    <img src="/2.png" alt="event1">
-                    <h3 class="event_title">
-                        Creation of Knowledge in books organization</h3>
-                </a>
-                <a class="grid-item">
-                    <p class="event_date">August 26 2023</p>
-                    <img src="/3.png" alt="event2" >
-                    <h3 class="event_title">Opening the library in Mwanza</h3>
-                </a>
-                <a class="grid-item">
-                    <p class="event_date">Decemeber 01 2023</p>
-                    <img src="/4.png" alt="event3" >
-                    <h3 class="event_title">A visit to the library</h3>
-                </a>
-                <a class="grid-item">
-                    <p class="event_date">January 15 2024</p>
-                    <img src="/2.png" alt="event4" >
-                    <h3 class="event_title">New books into the library</h3>
-                </a>
-                <a class="grid-item">
-                    <p class="event_date">February 01 2024</p>
-                    <img src="/3.png" alt="event5" >
-                    <h3 class="event_title">Starting our tech related campaign</h3>
-                </a>
 
-                <a class="grid-item future_event">
-                    <p class="futer_event_paragraph">
-                        We except to do more in the future
-                        <span class="call_to_action">Join Knib Organization</span> to make it happen.
-                    </p>
+    <div class="timeline_events">
+        <section id=timeline>
+            <h1>KNOWLEDGE IN BOOKS ORGANIZATION</h1>
+            <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+            <div class="demo-card-wrapper">
+                <div class="demo-card demo-card--step1">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>19/03/2024</span>
+                        </div>
+                        <h2><span class="small">A Dream Rebuilt </span>Library Renovation</h2>
+                    </div>
+                    <div class="body">
+                        <p>
+                            It all started as an idea—a vision to create a space where children and young learners could find books, learn, and dream bigger. But the reality was different. The library, once a beacon of hope, had fallen into disrepair. The walls were worn, shelves were empty, and the place that should have been filled with the sound of turning pages and eager discussions stood in silence.
 
-                </a>
+Then, hope arrived. With the generous support of From Books to Brilliance and Rotary eClub of the Southwest USA, the community came together to breathe new life into the space. Volunteers—young and old—grabbed paintbrushes, repaired broken furniture, and carefully arranged books on the shelves. It wasn’t just about renovation; it was about restoring a sense of belonging.
 
+On the final day of renovation, children gathered at the doors, peeking in with excitement. When the last book was placed on the shelf, there was a moment of silence—then applause. The library was no longer just a room with books; it was a home for knowledge.
+                        </p>
+                        <img src="2.png" alt="Graphic">
+                    </div>
+                </div>
+        
+                <div class="demo-card demo-card--step2">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>02</span>
+                        </div>
+                        <h2><span class="small">Subtitle</span> Confidence</h2>
+                    </div>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                        <img src="4.png" alt="Graphic">
+                    </div>
+                </div>
+        
+                <div class="demo-card demo-card--step3">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>03</span>
+                        </div>
+                        <h2><span class="small">Subtitle</span> Adaptation</h2>
+                    </div>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                        <img src="3.png" alt="Graphic">
+                    </div>
+                </div>
+        
+                <div class="demo-card demo-card--step4">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>04</span>
+                        </div>
+                        <h2><span class="small">Subtitle</span> Consistency</h2>
+                    </div>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                        <img src="students.png" alt="Graphic">
+                    </div>
+                </div>
+        
+                <div class="demo-card demo-card--step5">
+                    <div class="head">
+                        <div class="number-box">
+                            <span>05</span>
+                        </div>
+                        <h2><span class="small">Subtitle</span> Conversion</h2>
+                    </div>
+                    <div class="body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                        <img src="2.png" alt="Graphic">
+                    </div>
+                </div>
+            
             </div>
-        </div>
+        </section>
 
     </div>
 
