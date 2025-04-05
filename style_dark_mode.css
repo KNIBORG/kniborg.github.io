@@ -128,19 +128,51 @@ body.dark-mode .nav-links li a:hover {
 } */
 
 
+/* TIMELINE */
+
 body.dark-mode #timeline {
-  padding: 100px 0;
   background-color: var(--dark_level_0);
+  border-top: none;
+  border-bottom: none;
+}
+body.dark-mode .timeline_events {
+  background-color: var(--dark_level_0);
+  color: var(--white_level_1);
   border-top: 1px solid var(--dark_level_4);
   border-bottom: 1px solid var(--dark_level_4);
-}
-body.dark-mode #timeline h1 {
-
-  color: var(--white_level_1);
-}
-body.dark-mode #timeline p.leader {
  
-  color: var(--white_level_1);
+}
+
+.body.dark-mode #timeline .timeline-item {
+ background-color: var(--dark_level_0);
 }
 
 
+body.dark-mode .timeline_events .timeline_title {
+  color: var(--white_level_0);
+}
+
+body.dark-mode .timeline_events .timeline_sub_title {
+  color: var(--white_level_0);
+}
+
+body.dark-mode #timeline p {
+  color: var(--white_level_0);
+}
+
+body.dark-mode #timeline .timeline-item .timeline-content {
+  background: var(--dark_level_1);
+  color: var(--white_level_0);
+}
+
+
+body.dark-mode #timeline .btn {
+  border: 2px solid var(--white_level_1);
+  color: var(--white_level_1);
+
+  -webkit-box-shadow: 2px 2px 0 var(--white_level_1);
+  -moz-box-shadow: 2px 2px 0 var(--white_level_1);
+  -ms-box-shadow: 2px 2px 0 var(--white_level_1);
+  box-shadow: 2px 2px 0 var(--white_level_1);
+
+}
