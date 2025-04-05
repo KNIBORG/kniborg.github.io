@@ -314,15 +314,15 @@ position: relative;
 
 
 .moon_icon{
-  width: 28px;
+  width: 20px;
   color: white;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .sun_icon{
-  width: 28px;
+  width: 24px;
   color: white;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 /* Close Icon Styles */
 
@@ -730,36 +730,10 @@ align-items: end;
   color: #fff;
   font-size: 20px;
   padding: 10px;
-  background-color: #333;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
 
-.social-icon:hover {
-  background-color: transparent;
-}
-
-.social-icon:hover #youtube {
-  color: #ff0000;
-}
-
-.social-icon:hover #instagram {
-  border-radius: 4px;
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-  -webkit-text-fill-color: transparent;
-  transition: transform 0.3s, filter 0.3s; /* Smooth hover effects */
-}
-
-.social-icon:hover #twitter {
-  color: #007bff;
-}
-
-.social-icon:hover #facebook {
-  color: #0000ff;
-}
-.social-icon:hover #LinkedIn {
-  color: #0077b5;
-}
 
 .quick-links {
   list-style: none;
@@ -928,12 +902,13 @@ align-items: end;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   margin: auto;
+  margin-top: 10px;
 }
 
 .core-values-content {
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -966,8 +941,7 @@ align-items: end;
   margin: auto;
   background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .about-header h1 {

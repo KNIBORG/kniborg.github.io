@@ -176,3 +176,62 @@ body.dark-mode #timeline .btn {
   box-shadow: 2px 2px 0 var(--white_level_1);
 
 }
+
+/* footer */
+
+body.dark-mode .footer {
+  border-top: 1px solid var(--dark_level_4);
+  background-color: var(--dark_level_1);
+  color: var(--white_level_0);
+
+}
+
+body.dark-mode .underline {
+  border-top:none;
+  background-color: var(--dark_level_1);
+}
+
+/* ABOUT DARK MODE */
+
+body.dark-mode .vision .img_container {
+  border: 1px solid var(--dark_level_4);
+
+}
+
+body.dark-mode .mission .img_container {
+  border: 1px solid var(--dark_level_4);
+
+}
+
+
+body.dark-mode .mvv_divider{
+  background-color: var(--dark_level_4);
+}
+
+body.dark-mode .core-values .img_container {
+ border: 1px solid var(--dark_level_4);
+}
+
+
+body.dark-mode .core-values-content {
+  background: var(--dark_level_1);
+}
+
+
+body.dark-mode .about-container {
+  background: var(--dark_level_0);
+}
+
+body.dark-mode .filter-buttons button {
+  background: var(--dark_level_1);
+  color: var(--white_level_0);
+}
+
+body.dark-mode .team-member {
+  background: var(--dark_level_1);
+}
+
+body.dark-mode .team-member p {
+  color: var(--white_level_0);
+}
+
