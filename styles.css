@@ -674,7 +674,7 @@ align-items: end;
   flex: 1;
   min-width: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -683,7 +683,7 @@ align-items: end;
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
-  border-bottom: 2px solid #555;
+  border-bottom: 1px solid #555;
   display: inline-block;
 }
 
@@ -692,11 +692,16 @@ align-items: end;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: none;
   border-radius: 0px;
   font-size: 14px;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--dark_level_0);
   background-color: transparent;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--dark_level_4); 
+  font-style: italic; 
 }
 
 .contact-form textarea {
@@ -705,7 +710,7 @@ align-items: end;
 }
 
 .contact-form button {
-  background-color: var(--accent-color2);
+  background-color: var(--blue_level_0);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1029,6 +1034,7 @@ align-items: end;
 
 .partners a:hover{
   color: var(--yellow_level_0);
+  text-decoration: none;
 }
 
 .team_contacts{
