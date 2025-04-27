@@ -286,3 +286,33 @@ body.dark-mode .partners a:hover{
   text-decoration: none;
 }
 
+body.dark-mode .cta_img_container{
+  border: 1px solid  rgba(255, 255, 255, 0.2);
+  background-color: var(--dark_level_1);
+}
+
+
+body.dark-mode  .cta_left_card{
+  border: 1px solid  rgba(255, 255, 255, 0.2);
+
+}
+body.dark-mode  .cta_right_card{
+  border: 1px solid  rgba(255, 255, 255, 0.2);
+
+
+}
+body.dark-mode  .cta_third_row{
+  border: 1px solid  rgba(255, 255, 255, 0.2);
+
+}
+
+body.dark-mode .cta_email{
+  color: var(--yellow_level_0);
+  font-weight: var(--font_weight_4);
+
+}
+
+body.dark-mode .cta_email:hover{
+  text-decoration: none;
+}
+

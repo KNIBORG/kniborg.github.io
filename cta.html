@@ -10,43 +10,150 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/fav/favicon-16x16.png">
     <link rel="manifest" href="resources/fav/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_dark_mode.css">
 </head>
 
 <body>
 
+  
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="resources/logo.png" alt="">
 
-
-
-
-    <div class="cta-main">
-        <div class="cta-main-container">
-            <div class="cta-right">
-                <img src="/resources/logo.png" alt="">
-
+                </a>
+              
             </div>
-            <div class="cta-left">
-                <h2>Your support makes a difference! Join us in our mission to create a better future.</h2>
-                <div class="cta-buttons">
-                    <button class="cta-button-v">Volunteer</button>
+      
+              
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu_close_icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                      
+                </label>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">Who are we</a></li>
 
-                    <button class="cta-button-d">Donate</button>
-                </div>
+                <li>
+                    <a href="#" class="desktop-item">Services</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Services</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row row_img">
+                                <img class="logo_img" src="resources/logo.png" alt="Official Logo">
+                            </div>
+                            <div class="row">
+                                <header>Library Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Physical Library Access
+                                        </a></li>
+                                    <li><a href="#">Membership Plans
+                                        </a></li>
+                                    <li><a href="#">Book Borrowing Policies
+                                        </a></li>
+                                    <li><a href="#">Our Collection</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Digital Learning</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Learning Portal</a></li>
+                                    <li><a href="#">How to Use the Learning
+                                            Portal</a></li>
 
+                                    <li><a href="#">Digital Membership Plans
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Other services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Study Guides
+                                        </a></li>
+                                    <li><a href="#">Research Papers
+                                        </a></li>
+                                    <li><a href="#">Learning Tools
+                                        </a></li>
+                                    <li><a href="#">Children's Books
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="dark_mode" id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="currentColor" class="moon_icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                      </svg>
+                      
+                      
+                </li>
+            </ul>
+            <div class="cta_div">
+                
+                <a id="cta" href="cta.html">JOIN US</a>
+                <a href="cta.html" class="bookmark">
+              
+                </a>
             </div>
-
+            <label for="menu-btn" class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="menu_open_icon">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm8.25 5.25a.75.75 0 0 1 .75-.75h8.25a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+            </label>
         </div>
+    </nav>
+
+
+    <div class="cta_main_container">
+        <div class="cta_rows_container">
+            <div class="cta_first_row">
+                <div class="cta_img_container">
+                    <img class="cta_donate_img" src="/donate_books.png" alt="">
+                </div>
+                <h1 class="cta_card_title">HELP US CREATE MORE VALUE </h1>
+            <p>You can help us create more value by either of the following:</p>
+        
+             </div>
+             <div class="cta_second_row">
+                <div class="cta_left_card">
+
+                        <h1 class="cta_card_title">DONATE</h1>
+
+                        <p>Bank Name: CRDB BANK PLC</p>
+                        <p>Account Number: 015C822403700</p>
+                        <p>Account Name: Knowledge In Books</p>
+                        <p>Swiftcode: CORUTZTZ</p>
+                </div>
+                <div class="cta_right_card">
+                    <h1 class="cta_card_title">VOLUNTEER</h1>
+                     <p>Volunteering is a great way to give back to the community and help others. You can volunteer by donating your time, skills, or resources to help with a variety of tasks, such as writing, translating, or designing content.</p>
+                </div>
+             </div>
+             <div class="cta_third_row">
+                <h1>
+                    <p>If you're interested in volunteering,seeing the libraries in action, or just want to learn more about how you can get involved, please contact us at <a class="cta_email" href="mailto:knowledgeinbooks2023@gmail.com.com">knowledgeinbooks2023@gmail.com</a> to learn more about how you can get involved.</p></h1>
+             </div>
+        
+        </div>
+
+
     </div>
 
 
-    <script>
-        const currentYear = new Date().getFullYear();
-
-
-        document.getElementById('current-year').textContent = currentYear;
-    </script>
-
-
-
+    
+    <script src="scripts.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
