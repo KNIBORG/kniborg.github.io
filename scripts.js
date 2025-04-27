@@ -1,12 +1,20 @@
 const images = ["2.png", "3.png", "4.png"];
 let currentIndex = 0;
 
+
 function changeImage() {
+    const sliderImage = document.getElementById("slider-image");
     currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById("slider-image").src = images[currentIndex];
+    sliderImage.src = images[currentIndex];
+    
+    // Restart animation
+    sliderImage.style.animation = 'none'; // Reset
+    void sliderImage.offsetWidth; // Trigger reflow (technical magic you don't need to understand)
+    sliderImage.style.animation = 'slowZoomOut 3s ease-in-out forwards';
 }
 
-setInterval(changeImage, 3000);
+
+setInterval(changeImage, 5000);
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".filter-buttons button");

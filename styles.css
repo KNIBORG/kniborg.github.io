@@ -425,10 +425,22 @@ align-items: end;
   position: relative;
 }
 
+
+@keyframes slowZoomOut {
+  0% {
+    transform: scale(1.2); /* Start a bit zoomed IN */
+  }
+  100% {
+    transform: scale(1); /* Zoom OUT to normal */
+  }
+}
+
 .image-placeholder img {
   width: 100%;
   height: auto;
   border-radius: 0px;
+  animation: slowZoomOut 5s ease-in-out forwards;
+
 }
 
 
@@ -437,6 +449,8 @@ align-items: end;
   display: flex;
   gap: 20px;
 }
+
+
 
 /* events */
 
